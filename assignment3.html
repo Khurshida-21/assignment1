@@ -72,13 +72,16 @@
         button:hover{
             background-color: #2f5f56;
         }
+        option{
+            color: #1C3934;
+        }
     </style>
 </head>
 <body style="background-color: #F4F8F9;">
     <header>
         <h1>Tech Application</h1>
         <br>
-        <p>where future Starts Here</p>
+        <p>Where The Future Starts</p>
         <br>
         <p style="word-spacing: 20px;">
         <a href="#">HOME</a>
@@ -108,27 +111,27 @@
             <form action="#" method="post">
 
                 <label for="fname">Full Name :</label>
-                <input type="text" id="fname" placeholder="Enter your name">
+                <input type="text" id="fname" name="Full Name" placeholder="Enter your name">
 
                 <label for="email">Email :</label>
-                <input type="email" id="email" placeholder="example@gmail.com">
+                <input type="email" id="email" name="Email" placeholder="example@gmail.com">
 
                 <label for="phone">Phone Number :</label>
-                <input type="tel" id="phone" placeholder="Enter your number" pattern="[0-9]{10}">
+                <input type="tel" id="phone" name="Phone Number" placeholder="Enter your number" pattern="[0-9]{10}">
 
                 <label for="position">Applying For</label>
                 <select name="position" id="position">
                     <option value="">--Select Position--</option>
-                    <option value="Web Developer"></option>
-                    <option value="frontend Developer"></option>
-                    <option value="Backend Developer"></option>
-                    <option value="Graphic Designer"></option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
                 </select>
 
                 <br>
                 <div>
 
-                    <label for="choose">choose city: </label>
+                <label for="choose">choose city: </label>
 
                 <input type="radio" id="Hubli" name="citys" value="Hubli">
                 <label for="Hubli">Hubli</label>
@@ -145,9 +148,8 @@
                 <input type="number" id="Experience" placeholder="your experience">
 
                 <label for="Gender"> Choose Gender:</label>
-                <label> <input type="checkbox" name="Female" value="Female">Female </label>
-                <label> <input type="checkbox" name="Male" value="Male">Male </label>
-
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
 
                 <label for="resume">Upload Resume</label>
                 <input type="file" id="resume" accept=".pdf, .doc, .docx">
